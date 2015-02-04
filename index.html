@@ -16,7 +16,7 @@
 	<meta name="date" content="2015-01-30T00:00:00+01:00">
 
 	<link rel="stylesheet" href="assets/css/documenter_style.css" media="all">
-
+	<link rel="stylesheet" href="assets/css/monoki.css" media="all">
 
 
 	<script src="assets/js/jquery.js"></script>
@@ -120,6 +120,13 @@
 		Simply download <a href="">this zip file</a> and import it into your wordpress.
 		To import use "Tools->Import".</p>
 	</section>
+	
+<!-- you can use a code tag or a pre tag* -->
+<pre><code data-language="css">.super-duper {
+	background-color: #23fe23;
+}</code></pre>
+
+<pre><code data-language="html"><p>hallo</p></code></pre>
 
 
 <section id="theme_features">
@@ -374,5 +381,16 @@
 </section>
 
 	</div>
+	
+	<script src="assets/js/rainbow-custom.min.js"></script>
+	<script>
+		$(document).ready(function() {
+			function showHiddenParagraphs() {
+				$("p.hidden").fadeIn(500);
+			}
+			setTimeout(showHiddenParagraphs, 1000);
+		});
+	</script>
+	
 </body>
 </html>
