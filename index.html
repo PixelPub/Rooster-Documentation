@@ -16,7 +16,7 @@
 	<meta name="date" content="2015-01-30T00:00:00+01:00">
 
 	<link rel="stylesheet" href="assets/css/documenter_style.css" media="all">
-
+	<link rel="stylesheet" href="assets/css/monoki.css" media="all">
 
 
 	<script src="assets/js/jquery.js"></script>
@@ -105,7 +105,6 @@
 		<section id="initial_setup">
 			<div class="page-header"><h3>Initial Setup</h3><hr class="notop"></div>
 			<p>When you are ready to install a theme, you must first upload the theme to your WordPress directory. There are two ways you can install the theme:</p>
-
 			<ul>
 				<li>Using FTP: By using any FTP program of your choice you can upload the non-zipped folder to the /wp-content/themes/ folder on your server.</li>
 				<li>Using WordPress: Navigate to Appearance → Themes → Install Themes. Go to upload and select the zipped theme folder and hit install now and theme will be uploaded and installed. Once you have uploaded the theme, you need to active it. To activate your new theme, go to Appearance → Themes and activate your chosen theme.</li>
@@ -120,6 +119,7 @@
 			Simply download <a href="">this zip file</a> and import it into your wordpress.
 			To import use "Tools->Import".</p>
 		</section>
+
 
 
 		<section id="theme_features">
@@ -289,86 +289,100 @@
 				<li>Client</li>
 			</ul>
 
-			<h4>Team</h4>
-			<p>Your team members can be added via the "Team" tab in the admin panel. They
-			consist of a custom text and a featured image. Team members will be shown in
-			the bottom of the "About" template.</p>
-		</section>
-		<section id="shortcodes">
-			<div class="page-header"><h3>Shortcodes</h3><hr class="notop"></div>
-			<p> We have several shortcodes for you.</p>
-			<h4>Portfolio</h4>
-			<p> This shortcode generates a portfolio grid.</p>
-			<p> Attributes</p>
-			<ul>
-				<li> cols - How many colums to produce (default: 2)
-				</li>
-			</ul>
-			<p>Example</p>
-			<code>
-				[portfolio cols="1"]
-			</code>
-			<h4>Maps</h4>
-			<p> This shortcode generates a google maps iFrame.</p>
-			<p> Attributes</p>
-			<ul>
-				<li> width - (default: 100%)
-				</li>
-				<li> height - (default: 600)
-				</li>
-				<li> frameborder - Whether the iFrame displays a border or not  (default: 0)
-				</li>
-				<li> style - additional styling (default: "border:0")
-				</li>
-				<li> src - The embed code URL (default: your settings in the customizer)
-				</li>
-			</ul>
-			<p>Example</p>
-			<code>
-				[maps width="300px" height="300px" frameborder="1" style="border:0"]
-			</code>
-			<h4>Tagline</h4>
-			<p>This shortcode display a full width tagline.</p>
-			<p>Attributes</p>
-			<ul>
-				<li> none
-				</li>
-			</ul>
-			<p>Example</p>
-			<code>
-				[tagline] I really want you to read this! [/tagline]
-			</code>
-			<h4>Columns</h4>
-			<p>These shortcodes generate columns with 1/2, 1/3 or 1/4 size. Be sure to always
-			fill up to a whole row. Do not just use a single "one_half" shortcode!</p>
-			<p>Attributes</p>
-			<ul>
-				<li> first - "yes"/"no" specifies whether this is the first column (default: '')
-				</li>
-				<li> last - "yes"/"no" specifies whether this is the last column (default: '')
-				</li>
-			</ul>
-			<p>Example</p>
-			<pre class="plain">
-				[one_half first="yes"] This is my first half [/one_half]
-				[one_half last="yes"] This is my second half [/one_half]
-			</pre>
-		<pre class="plain">
-				[one_third first="yes"] This is my first third [/one_third]
-				[one_third] This is my second third            [/one_third]
-				[one_third last="yes"] This is my last third  [/one_third]
-			</pre>
-			<pre class="plain">
-				[one_fourth first="yes"] This is my first fourth [/one_fourth]
-				[one_fourth ] This is my second fourth [/one_fourth]
-				[one_fourth ] This is my third fourth [/one_fourth]
-				[one_fourth last="yes"] This is my last fourth [/one_fourth]
-			</pre>
-		</section>
-		<section id="faq">
-			<div class="page-header"><h3>FAQ</h3><hr class="notop"></div>
-				<p>No questions so far ;)</p>
-		</section>
+	<h4>Team</h4>
+	<p>Your team members can be added via the "Team" tab in the admin panel. They
+	consist of a custom text and a featured image. Team members will be shown in
+	the bottom of the "About" template.</p>
+</section>
+<section id="shortcodes">
+	<div class="page-header"><h3>Shortcodes</h3><hr class="notop"></div>
+<p> We have several shortcodes for you.</p>
+	<h4>Portfolio</h4>
+	<p> This shortcode generates a portfolio grid.</p>
+	<p> Attributes</p>
+	<ul>
+		<li> cols - How many colums to produce (default: 2)
+		</li>
+	</ul>
+	<p>Example</p>
+	<code>
+		[portfolio cols="1"]
+	</code>
+	<h4>Maps</h4>
+	<p> This shortcode generates a google maps iFrame.</p>
+	<p> Attributes</p>
+	<ul>
+		<li> width - (default: 100%)
+		</li>
+		<li> height - (default: 600)
+		</li>
+		<li> frameborder - Whether the iFrame displays a border or not  (default: 0)
+		</li>
+		<li> style - additional styling (default: "border:0")
+		</li>
+		<li> src - The embed code URL (default: your settings in the customizer)
+		</li>
+	</ul>
+	<p>Example</p>
+	<pre><code data-language="plain">
+		[maps width="300px" height="300px" frameborder="1" style="border:0"]
+	</code></pre>
+	<h4>Tagline</h4>
+	<p> This shortcode display a full width tagline.</p>
+	<p> Attributes</p>
+	<ul>
+		<li> none
+		</li>
+	</ul>
+	<p>Example</p>
+	<pre><code data-language="plain">
+		[tagline] I really want you to read this! [/tagline]
+	</code></pre>
+	<h4>Columns</h4>
+	<p> These shortcodes generate columns with 1/2, 1/3 or 1/4 size. Be sure to always
+	fill up to a whole row. Do not just use a single "one_half" shortcode!</p>
+	<p> Attributes</p>
+	<ul>
+		<li> first - "yes"/"no" specifies whether this is the first column (default: '')
+		</li>
+		<li> last - "yes"/"no" specifies whether this is the last column (default: '')
+		</li>
+	</ul>
+	<p>Example</p>
+	<pre><code data-language="plain">
+		[one_half first="yes"] This is my first half [/one_half]
+		[one_half last="yes"] This is my second half [/one_half]
+	</code></pre>
+</br></br>
+<pre><code data-language="plain">
+		[one_third first="yes"] This is my first third [/one_third]
+		[one_third] This is my second third            [/one_third]
+		[one_third last="yes"] This is my last third  [/one_third]
+	</code></pre>
+</br></br>
+<pre><code data-language="plain">
+		[one_fourth first="yes"] This is my first fourth [/one_fourth]
+		[one_fourth ] This is my second fourth [/one_fourth]
+		[one_fourth ] This is my third fourth [/one_fourth]
+		[one_fourth last="yes"] This is my last fourth [/one_fourth]
+	</code></pre>
+</section>
+<section id="faq">
+	<div class="page-header"><h3>FAQ</h3><hr class="notop"></div>
+<p>
+	Start Here</p>
+</section>
 	</div>
+
+	<script src="assets/js/rainbow-custom.min.js"></script>
+	<script>
+		$(document).ready(function() {
+			function showHiddenParagraphs() {
+				$("p.hidden").fadeIn(500);
+			}
+			setTimeout(showHiddenParagraphs, 1000);
+		});
+	</script>
+
 </body>
 </html>
